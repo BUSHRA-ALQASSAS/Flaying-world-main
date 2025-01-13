@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations - FLYING WORLD</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/components/sidebar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <button class="sidebar-toggle" aria-label="Toggle menu">
+                <span class="material-symbols-rounded">menu</span>
+            </button>
+            <a href="index.html" class="logo">
+                <span class="material-symbols-rounded">flight_takeoff</span>
+                <span>F</span>lying<span>W</span>orld
+            </a>
+        </div>
+        <nav class="navbar">
+            <a href="index.html" class="nav-link">
+                <span class="material-symbols-rounded">home</span>
+                <span>Home</span>
+            </a>
+            <a href="destinations.html" class="nav-link active">
+                <span class="material-symbols-rounded">travel_explore</span>
+                <span>Destinations</span>
+            </a>
+            <a href="services.html" class="nav-link">
+                <span class="material-symbols-rounded">concierge</span>
+                <span>Services</span>
+            </a>
+            <a href="offers.html" class="nav-link">
+                <span class="material-symbols-rounded">local_offer</span>
+                <span>Offers</span>
+            </a>
+            <a href="booking.html" class="nav-link">
+                <span class="material-symbols-rounded">calendar_month</span>
+                <span>Booking</span>
+            </a>
+            <a href="contact.html" class="nav-link">
+                <span class="material-symbols-rounded">contact_support</span>
+                <span>Contact</span>
+            </a>
+        </nav>
+        <div class="icons">
+            <i class="fas fa-search" id="search-btn"></i>
+            <i class="fas fa-user" id="login-btn"></i>
+        </div>
+    </header>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <a href="index.html" class="sidebar-logo">
+                <span class="material-symbols-rounded">flight_takeoff</span>
+                <span>F</span>lying<span>W</span>orld
+            </a>
+            <i class="fas fa-times sidebar-close"></i>
+        </div>
+
+        <ul class="nav-links">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="destinations.html" class="nav-link active">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Destinations</span>
+                    <span class="badge">New</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="services.html" class="nav-link">
+                    <i class="fas fa-concierge-bell"></i>
+                    <span>Services</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="offers.html" class="nav-link">
+                    <i class="fas fa-gift"></i>
+                    <span>Special Offers</span>
+                    <span class="badge">Hot</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="booking.html" class="nav-link">
+                    <i class="fas fa-calendar-check"></i>
+                    <span>Book Now</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="contact.html" class="nav-link">
+                    <i class="fas fa-envelope"></i>
+                    <span>Contact Us</span>
+                </a>
+            </li>
+        </ul>
+
+        <div class="sidebar-footer">
+            <div class="social-links">
+                <a href="#" class="social-link">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="social-link">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="social-link">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="social-link">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+        </div>
+    </aside>
+
+    <main class="destinations-page">
+        <section class="destinations-header" data-aos="fade-down">
+            <h1 class="heading">
+                <span>Popular Destinations</span>
+            </h1>
+            <div class="filters">
+                <select id="continent-filter" class="filter-select">
+                    <option value="">All Continents</option>
+                    <option value="asia">Asia</option>
+                    <option value="europe">Europe</option>
+                    <option value="africa">Africa</option>
+                    <option value="namerica">North America</option>
+                    <option value="samerica">South America</option>
+                    <option value="australia">Australia</option>
+                </select>
+                <select id="price-filter" class="filter-select">
+                    <option value="">All Prices</option>
+                    <option value="budget">Budget</option>
+                    <option value="moderate">Moderate</option>
+                    <option value="luxury">Luxury</option>
+                </select>
+                <select id="season-filter" class="filter-select">
+                    <option value="">All Seasons</option>
+                    <option value="spring">Spring</option>
+                    <option value="summer">Summer</option>
+                    <option value="autumn">Autumn</option>
+                    <option value="winter">Winter</option>
+                </select>
+            </div>
+        </section>
+
+        <section class="destinations-grid">
+            <!-- Europe -->
+            <div class="destination-card" data-continent="europe" data-price="luxury" data-season="summer">
+                <div class="destination-image">
+                    <img src="images/paris.jpg" alt="Paris">
+                    <div class="destination-overlay">
+                        <span class="price">From $1,200</span>
+                        <span class="duration">5 Days</span>
+                    </div>
+                </div>
+                <div class="destination-content">
+                    <h3>Paris, France</h3>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>(4.5/5)</span>
+                    </div>
+                    <p>Experience the magic of the City of Light with its iconic landmarks and romantic atmosphere.</p>
+                    <div class="destination-features">
+                        <span><i class="fas fa-hotel"></i> 4-Star Hotels</span>
+                        <span><i class="fas fa-utensils"></i> Breakfast</span>
+                        <span><i class="fas fa-plane"></i> Flights</span>
+                    </div>
+                    <a href="booking.html" class="btn">Book Now</a>
+                </div>
+            </div>
+
+            <!-- Asia -->
+            <div class="destination-card" data-continent="asia" data-price="moderate" data-season="spring">
+                <div class="destination-image">
+                    <img src="images/tokyo.jpg" alt="Tokyo">
+                    <div class="destination-overlay">
+                        <span class="price">From $1,500</span>
+                        <span class="duration">7 Days</span>
+                    </div>
+                </div>
+                <div class="destination-content">
+                    <h3>Tokyo, Japan</h3>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(4.8/5)</span>
+                    </div>
+                    <p>Discover the perfect blend of tradition and modernity in Japan's vibrant capital.</p>
+                    <div class="destination-features">
+                        <span><i class="fas fa-hotel"></i> 3-Star Hotels</span>
+                        <span><i class="fas fa-subway"></i> Metro Pass</span>
+                        <span><i class="fas fa-plane"></i> Flights</span>
+                    </div>
+                    <a href="booking.html" class="btn">Book Now</a>
+                </div>
+            </div>
+
+            <!-- More destination cards... -->
+        </section>
+
+        <section class="featured-experiences">
+            <h2 class="sub-heading">Featured Experiences</h2>
+            <div class="experiences-grid">
+                <div class="experience-card">
+                    <img src="images/safari.jpg" alt="Safari Adventure">
+                    <div class="experience-content">
+                        <h3>Safari Adventure</h3>
+                        <p>Experience the thrill of African wildlife up close</p>
+                        <a href="#" class="btn">Learn More</a>
+                    </div>
+                </div>
+                <!-- More experience cards... -->
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>About Us</h3>
+                <p>Your trusted travel partner providing comprehensive travel services worldwide.</p>
+            </div>
+            <div class="box">
+                <h3>Branch Locations</h3>
+                <a href="#">USA</a>
+                <a href="#">Japan</a>
+                <a href="#">France</a>
+                <a href="#">Russia</a>
+            </div>
+            <div class="box">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="destinations.html">Destinations</a>
+                <a href="services.html">Services</a>
+                <a href="booking.html">Book Now</a>
+            </div>
+            <div class="box">
+                <h3>Follow Us</h3>
+                <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+                <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+                <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            mirror: false
+        });
+    </script>
+    <script src="assets/js/modules/sidebar.js"></script>
+    <script src="travel.js"></script>
+</body>
+</html>

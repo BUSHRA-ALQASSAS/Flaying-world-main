@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - FLYING WORLD</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/components/sidebar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-left">
+            <button class="sidebar-toggle" aria-label="Toggle menu">
+                <span class="material-symbols-rounded">menu</span>
+            </button>
+            <a href="index.html" class="logo">
+                <span class="material-symbols-rounded">flight_takeoff</span>
+                <span>F</span>lying<span>W</span>orld
+            </a>
+        </div>
+        <nav class="navbar">
+            <a href="index.html" class="nav-link">
+                <span class="material-symbols-rounded">home</span>
+                <span>Home</span>
+            </a>
+            <a href="destinations.html" class="nav-link">
+                <span class="material-symbols-rounded">travel_explore</span>
+                <span>Destinations</span>
+            </a>
+            <a href="services.html" class="nav-link">
+                <span class="material-symbols-rounded">concierge</span>
+                <span>Services</span>
+            </a>
+            <a href="offers.html" class="nav-link">
+                <span class="material-symbols-rounded">local_offer</span>
+                <span>Offers</span>
+            </a>
+            <a href="booking.html" class="nav-link">
+                <span class="material-symbols-rounded">calendar_month</span>
+                <span>Book Now</span>
+            </a>
+            <a href="contact.html" class="nav-link active">
+                <span class="material-symbols-rounded">contact_support</span>
+                <span>Contact</span>
+            </a>
+        </nav>
+        <div class="icons">
+            <i class="fas fa-search" id="search-btn"></i>
+            <i class="fas fa-user" id="login-btn"></i>
+        </div>
+    </header>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <a href="index.html" class="sidebar-logo">
+                <span class="material-symbols-rounded">flight_takeoff</span>
+                <span>F</span>lying<span>W</span>orld
+            </a>
+            <button class="sidebar-close">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+
+        <!-- User Section -->
+        <div class="sidebar-user">
+            <div class="user-actions">
+                <a href="login.html" class="nav-link">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <span>Login</span>
+                </a>
+                <a href="register.html" class="nav-link">
+                    <i class="fas fa-user-plus"></i>
+                    <span>Register</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Main Navigation -->
+        <ul class="nav-links">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </a>
+            </li>
+            
+            <!-- Travel Section -->
+            <li class="nav-section">
+                <span class="nav-section-title">Travel</span>
+            </li>
+            <li class="nav-item">
+                <a href="destinations.html" class="nav-link">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Destinations</span>
+                    <span class="badge">New</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="hotels.html" class="nav-link">
+                    <i class="fas fa-hotel"></i>
+                    <span>Hotels</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="booking.html" class="nav-link">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span>Book Now</span>
+                </a>
+            </li>
+
+            <!-- Services Section -->
+            <li class="nav-section">
+                <span class="nav-section-title">Services</span>
+            </li>
+            <li class="nav-item">
+                <a href="services.html" class="nav-link">
+                    <i class="fas fa-concierge-bell"></i>
+                    <span>Our Services</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="offers.html" class="nav-link">
+                    <i class="fas fa-tag"></i>
+                    <span>Special Offers</span>
+                    <span class="badge hot">Hot</span>
+                </a>
+            </li>
+
+            <!-- Support Section -->
+            <li class="nav-section">
+                <span class="nav-section-title">Support</span>
+            </li>
+            <li class="nav-item active">
+                <a href="contact.html" class="nav-link">
+                    <i class="fas fa-envelope"></i>
+                    <span>Contact Us</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="about.html" class="nav-link">
+                    <i class="fas fa-info-circle"></i>
+                    <span>About Us</span>
+                </a>
+            </li>
+        </ul>
+
+        <!-- Footer -->
+        <div class="sidebar-footer">
+            <div class="social-links">
+                <a href="#" class="social-link">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="social-link">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="social-link">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Contact Section -->
+    <main class="contact-page" data-aos="fade-up">
+        <div class="contact-container">
+            <div class="language-tabs">
+                <button class="lang-tab active" data-lang="en">English</button>
+                <button class="lang-tab" data-lang="ar">عربي</button>
+            </div>
+
+            <div class="contact-content">
+                <!-- English Contact Form -->
+                <div class="contact-section" id="contact-en" data-lang="en" data-aos="fade-right">
+                    <div class="contact-info">
+                        <h2>Get in Touch</h2>
+                        <p>We'd love to hear from you. Please fill out this form or use our contact information below.</p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <h3>Address</h3>
+                                    <p>123 Travel Street, Tourism City, TC 12345</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <h3>Phone</h3>
+                                    <p>+1 234 567 8900</p>
+                                    <p>+1 234 567 8901</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <h3>Email</h3>
+                                    <p>info@flyingworld.com</p>
+                                    <p>support@flyingworld.com</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-clock"></i>
+                                <div>
+                                    <h3>Working Hours</h3>
+                                    <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                                    <p>Saturday: 10:00 AM - 4:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form class="contact-form" id="contact-form-en">
+                        <h2>Send us a Message</h2>
+                        <div class="form-group">
+                            <i class="fas fa-user"></i>
+                            <label for="name-en">Full Name</label>
+                            <div class="input-group">
+                                <input type="text" id="name-en" name="name" required placeholder="Enter your full name">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <i class="fas fa-envelope"></i>
+                            <label for="email-en">Email Address</label>
+                            <div class="input-group">
+                                <input type="email" id="email-en" name="email" required placeholder="Enter your email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <i class="fas fa-phone"></i>
+                            <label for="phone-en">Phone Number</label>
+                            <div class="input-group">
+                                <input type="tel" id="phone-en" name="phone" placeholder="Enter your phone number">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject-en">Subject</label>
+                            <div class="input-group">
+                                <i class="fas fa-tag"></i>
+                                <select id="subject-en" name="subject" required>
+                                    <option value="">Select a subject</option>
+                                    <option value="booking">Booking Inquiry</option>
+                                    <option value="support">Customer Support</option>
+                                    <option value="feedback">Feedback</option>
+                                    <option value="partnership">Partnership</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message-en">Message</label>
+                            <div class="input-group">
+                                <i class="fas fa-comment"></i>
+                                <textarea id="message-en" name="message" required placeholder="Type your message here..."></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- Arabic Contact Form -->
+                <div class="contact-section rtl" id="contact-ar" data-lang="ar" style="display: none;" data-aos="fade-right">
+                    <div class="contact-info">
+                        <h2>تواصل معنا</h2>
+                        <p>يسعدنا سماع رأيك. يرجى ملء هذا النموذج أو استخدام معلومات الاتصال أدناه.</p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <h3>العنوان</h3>
+                                    <p>123 شارع السياحة، مدينة السفر، 12345</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <h3>الهاتف</h3>
+                                    <p>+1 234 567 8900</p>
+                                    <p>+1 234 567 8901</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <h3>البريد الإلكتروني</h3>
+                                    <p>info@flyingworld.com</p>
+                                    <p>support@flyingworld.com</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-clock"></i>
+                                <div>
+                                    <h3>ساعات العمل</h3>
+                                    <p>الإثنين - الجمعة: 9:00 صباحاً - 6:00 مساءً</p>
+                                    <p>السبت: 10:00 صباحاً - 4:00 مساءً</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form class="contact-form" id="contact-form-ar">
+                        <h2>أرسل لنا رسالة</h2>
+                        <div class="form-group">
+                            <label for="name-ar">الاسم الكامل</label>
+                            <div class="input-group">
+                                <i class="fas fa-user"></i>
+                                <input type="text" id="name-ar" name="name" required placeholder="أدخل اسمك الكامل">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email-ar">البريد الإلكتروني</label>
+                            <div class="input-group">
+                                <i class="fas fa-envelope"></i>
+                                <input type="email" id="email-ar" name="email" required placeholder="أدخل بريدك الإلكتروني">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone-ar">رقم الهاتف</label>
+                            <div class="input-group">
+                                <i class="fas fa-phone"></i>
+                                <input type="tel" id="phone-ar" name="phone" placeholder="أدخل رقم هاتفك">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject-ar">الموضوع</label>
+                            <div class="input-group">
+                                <i class="fas fa-tag"></i>
+                                <select id="subject-ar" name="subject" required>
+                                    <option value="">اختر موضوعاً</option>
+                                    <option value="booking">استفسار عن الحجز</option>
+                                    <option value="support">دعم العملاء</option>
+                                    <option value="feedback">تقييم</option>
+                                    <option value="partnership">شراكة</option>
+                                    <option value="other">آخر</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message-ar">الرسالة</label>
+                            <div class="input-group">
+                                <i class="fas fa-comment"></i>
+                                <textarea id="message-ar" name="message" required placeholder="اكتب رسالتك هنا..."></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">إرسال الرسالة</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="map-section" data-aos="fade-up">
+                <h3>Our Location</h3>
+                <div class="map-container">
+                    <!-- Replace with your actual map embed code -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.30596552044!2d-74.25986548248684!3d40.69714941932609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1647043276541!5m2!1sen!2s" 
+                            width="100%" 
+                            height="450" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </main>
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>About Us</h3>
+                <p>The website incorporates essential and advanced features to provide a seamless travel booking experience.</p>
+            </div>
+            <div class="box">
+                <h3>Branch</h3>
+                <a href="#packages">Egypt</a>
+                <a href="#packages">London</a>
+                <a href="#packages">Korea</a>
+                <a href="#packages">Japan</a>
+            </div>
+            <div class="box">
+                <h3>Quick Links</h3>
+                <a href="#home">Home</a>
+                <a href="#book">Book</a>
+                <a href="#packages">Packages</a>
+                <a href="#services">Services</a>
+                <a href="#gallary">Gallary</a>
+                <a href="#review">Review</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="box">
+                <h3>Follow Us</h3>
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+                <a href="#">LinkedIn</a>
+            </div>
+        </div>
+        <h1 class="created">Created by <span>Bushra & Batool</span> all right reserved</h1>
+    </section>
+
+    <script src="assets/js/modules/sidebar.js"></script>
+    <script src="assets/js/modules/contact.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            mirror: false
+        });
+
+        // Form validation
+        document.querySelectorAll('.contact-form').forEach(form => {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                let isValid = true;
+                const requiredFields = this.querySelectorAll('[required]');
+                
+                requiredFields.forEach(field => {
+                    if (!field.value.trim()) {
+                        isValid = false;
+                        field.classList.add('error');
+                    } else {
+                        field.classList.remove('error');
+                    }
+                });
+
+                if (isValid) {
+                    // Show success message
+                    alert('Message sent successfully! We will get back to you soon.');
+                    this.reset();
+                } else {
+                    // Show error message
+                    alert('Please fill in all required fields.');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

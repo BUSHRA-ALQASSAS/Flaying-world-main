@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - FLYING WORLD</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/components/sidebar.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header-left">
+            <button class="sidebar-toggle" aria-label="Toggle menu">
+                <span class="material-symbols-rounded">menu</span>
+            </button>
+            <a href="index.html" class="logo">
+                <span class="material-symbols-rounded">flight_takeoff</span>
+                <span>F</span>lying<span>W</span>orld
+            </a>
+        </div>
+        <nav class="navbar">
+            <a href="index.html" class="nav-link">
+                <span class="material-symbols-rounded">home</span>
+                <span>Home</span>
+            </a>
+            <a href="destinations.html" class="nav-link">
+                <span class="material-symbols-rounded">travel_explore</span>
+                <span>Destinations</span>
+            </a>
+            <a href="services.html" class="nav-link">
+                <span class="material-symbols-rounded">concierge</span>
+                <span>Services</span>
+            </a>
+            <a href="offers.html" class="nav-link">
+                <span class="material-symbols-rounded">local_offer</span>
+                <span>Offers</span>
+            </a>
+            <a href="booking.html" class="nav-link">
+                <span class="material-symbols-rounded">calendar_month</span>
+                <span>Booking</span>
+            </a>
+            <a href="contact.html" class="nav-link">
+                <span class="material-symbols-rounded">contact_support</span>
+                <span>Contact</span>
+            </a>
+        </nav>
+        <div class="icons">
+            <button class="icon-btn" id="search-btn">
+                <span class="material-symbols-rounded">search</span>
+            </button>
+            <button class="icon-btn" id="login-btn">
+                <span class="material-symbols-rounded">person</span>
+            </button>
+            <button class="icon-btn" id="theme-toggle">
+                <span class="material-symbols-rounded">dark_mode</span>
+            </button>
+        </div>
+        <form action="" class="search-form">
+            <input type="search" id="search-bar" placeholder="Search here...">
+            <button type="submit" class="search-btn">
+                <span class="material-symbols-rounded">search</span>
+            </button>
+        </form>
+    </header>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <a href="index.html" class="sidebar-logo">
+                <span class="material-symbols-rounded">flight_takeoff</span>
+                <span>F</span>lying<span>W</span>orld
+            </a>
+            <button class="sidebar-close">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+
+        <!-- User Section -->
+        <div class="sidebar-user">
+            <div class="user-actions">
+                <a href="login.html" class="nav-link">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <span>Login</span>
+                </a>
+                <a href="register.html" class="nav-link active">
+                    <i class="fas fa-user-plus"></i>
+                    <span>Register</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Main Navigation -->
+        <ul class="nav-links">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </a>
+            </li>
+            
+            <!-- Travel Section -->
+            <li class="nav-section">
+                <span class="nav-section-title">Travel</span>
+            </li>
+            <li class="nav-item">
+                <a href="destinations.html" class="nav-link">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Destinations</span>
+                    <span class="badge">New</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="hotels.html" class="nav-link">
+                    <i class="fas fa-hotel"></i>
+                    <span>Hotels</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="booking.html" class="nav-link">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span>Book Now</span>
+                </a>
+            </li>
+
+            <!-- Services Section -->
+            <li class="nav-section">
+                <span class="nav-section-title">Services</span>
+            </li>
+            <li class="nav-item">
+                <a href="services.html" class="nav-link">
+                    <i class="fas fa-concierge-bell"></i>
+                    <span>Our Services</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="offers.html" class="nav-link">
+                    <i class="fas fa-tag"></i>
+                    <span>Special Offers</span>
+                    <span class="badge hot">Hot</span>
+                </a>
+            </li>
+
+            <!-- Support Section -->
+            <li class="nav-section">
+                <span class="nav-section-title">Support</span>
+            </li>
+            <li class="nav-item">
+                <a href="contact.html" class="nav-link">
+                    <i class="fas fa-envelope"></i>
+                    <span>Contact Us</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="about.html" class="nav-link">
+                    <i class="fas fa-info-circle"></i>
+                    <span>About Us</span>
+                </a>
+            </li>
+        </ul>
+
+        <!-- Footer -->
+        <div class="sidebar-footer">
+            <div class="social-links">
+                <a href="#" class="social-link">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="social-link">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="social-link">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Registration Form -->
+    <main class="auth-page">
+        <div class="auth-container" data-aos="fade-up">
+            <div class="auth-form-container">
+                <div class="auth-tabs">
+                    <button class="auth-tab active" data-lang="en">
+                        <span class="material-symbols-rounded">language</span>
+                        English
+                    </button>
+                    <button class="auth-tab" data-lang="ar">
+                        <span class="material-symbols-rounded">language</span>
+                        العربية
+                    </button>
+                </div>
+
+                <form class="auth-form active" id="register-form-en" data-lang="en" data-aos="fade-right">
+                    <h2>Create Account</h2>
+                    <p>Join FLYING WORLD and start your journey</p>
+                    
+                    <div class="form-group">
+                        <span class="material-symbols-rounded input-icon">person</span>
+                        <input type="text" placeholder="Full Name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <span class="material-symbols-rounded input-icon">mail</span>
+                        <input type="email" placeholder="Email Address" required>
+                    </div>
+
+                    <div class="form-group">
+                        <span class="material-symbols-rounded input-icon">phone</span>
+                        <input type="tel" placeholder="Phone Number" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <span class="material-symbols-rounded input-icon">lock</span>
+                        <input type="password" placeholder="Password" required>
+                        <span class="material-symbols-rounded toggle-password">visibility_off</span>
+                    </div>
+
+                    <div class="form-group">
+                        <span class="material-symbols-rounded input-icon">lock_reset</span>
+                        <input type="password" placeholder="Confirm Password" required>
+                        <span class="material-symbols-rounded toggle-password">visibility_off</span>
+                    </div>
+
+                    <div class="form-options">
+                        <label class="remember-me">
+                            <input type="checkbox" required>
+                            <span>I agree to the Terms & Conditions</span>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">
+                        <span class="material-symbols-rounded">how_to_reg</span>
+                        Sign Up
+                    </button>
+
+                    <p class="auth-redirect">
+                        Already have an account? 
+                        <a href="login.html">Sign In</a>
+                    </p>
+                </form>
+
+                <form class="auth-form rtl" id="register-form-ar" data-lang="ar" style="display: none;" data-aos="fade-right">
+                    <h2>إنشاء حساب</h2>
+                    <p>انضم إلى FLYING WORLD وابدأ رحلتك</p>
+                    
+                    <div class="form-group">
+                        <span class="material-symbols-rounded input-icon">person</span>
+                        <input type="text" placeholder="الاسم الكامل" required>
+                    </div>
+
+                    <div class="form-group">
+                        <span class="material-symbols-rounded input-icon">mail</span>
+                        <input type="email" placeholder="البريد الإلكتروني" required>
+                    </div>
+
+                    <div class="form-group">
+                        <span class="material-symbols-rounded input-icon">phone</span>
+                        <input type="tel" placeholder="رقم الهاتف" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <span class="material-symbols-rounded input-icon">lock</span>
+                        <input type="password" placeholder="كلمة المرور" required>
+                        <span class="material-symbols-rounded toggle-password">visibility_off</span>
+                    </div>
+
+                    <div class="form-group">
+                        <span class="material-symbols-rounded input-icon">lock_reset</span>
+                        <input type="password" placeholder="تأكيد كلمة المرور" required>
+                        <span class="material-symbols-rounded toggle-password">visibility_off</span>
+                    </div>
+
+                    <div class="form-options">
+                        <label class="remember-me">
+                            <input type="checkbox" required>
+                            <span>أوافق على الشروط والأحكام</span>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">
+                        <span class="material-symbols-rounded">how_to_reg</span>
+                        إنشاء حساب
+                    </button>
+
+                    <p class="auth-redirect">
+                        لديك حساب بالفعل؟
+                        <a href="login.html">تسجيل الدخول</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>FLYING WORLD is your trusted partner for unforgettable travel experiences. We provide comprehensive travel services with a focus on quality and customer satisfaction.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <ul class="contact-info">
+                    <li>
+                        <span class="material-symbols-rounded">location_on</span>
+                        123 Travel Street, City, Country
+                    </li>
+                    <li>
+                        <span class="material-symbols-rounded">phone</span>
+                        +1 234 567 890
+                    </li>
+                    <li>
+                        <span class="material-symbols-rounded">email</span>
+                        info@flyingworld.com
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 FLYING WORLD. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            mirror: false
+        });
+
+        // Form validation and password visibility toggle
+        document.querySelectorAll('.auth-form').forEach(form => {
+            const toggleBtns = form.querySelectorAll('.toggle-password');
+            const passwordInputs = form.querySelectorAll('input[type="password"]');
+
+            toggleBtns.forEach((btn, index) => {
+                btn.addEventListener('click', () => {
+                    const input = passwordInputs[index];
+                    const icon = btn.querySelector('.material-symbols-rounded');
+                    if (input.type === 'password') {
+                        input.type = 'text';
+                        icon.textContent = 'visibility_off';
+                    } else {
+                        input.type = 'password';
+                        icon.textContent = 'visibility';
+                    }
+                });
+            });
+
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                let isValid = true;
+                const requiredFields = this.querySelectorAll('[required]');
+                
+                requiredFields.forEach(field => {
+                    if (!field.value.trim()) {
+                        isValid = false;
+                        field.classList.add('error');
+                    } else {
+                        field.classList.remove('error');
+                    }
+                });
+
+                // Password validation
+                const password = this.querySelector('input[name="password"]');
+                const confirmPassword = this.querySelector('input[name="confirm-password"]');
+                if (password.value !== confirmPassword.value) {
+                    isValid = false;
+                    password.classList.add('error');
+                    confirmPassword.classList.add('error');
+                    alert('Passwords do not match');
+                    return;
+                }
+
+                // Phone number validation
+                const phone = this.querySelector('input[name="phone"]');
+                const phoneRegex = /^\+?[\d\s-]{8,}$/;
+                if (!phoneRegex.test(phone.value)) {
+                    isValid = false;
+                    phone.classList.add('error');
+                    alert('Please enter a valid phone number');
+                    return;
+                }
+
+                if (isValid) {
+                    // Here you would typically handle the registration logic
+                    console.log('Registration form submitted');
+                    // For demo purposes:
+                    alert('Registration successful! Please check your email to verify your account.');
+                    this.reset();
+                } else {
+                    alert('Please fill in all required fields correctly.');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

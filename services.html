@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - FLYING WORLD</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/components/sidebar.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header-left">
+            <button class="sidebar-toggle" aria-label="Toggle menu">
+                <span class="material-symbols-rounded">menu</span>
+            </button>
+            <a href="index.html" class="logo">
+                <span class="material-symbols-rounded">flight_takeoff</span>
+                <span>F</span>lying<span>W</span>orld
+            </a>
+        </div>
+        <nav class="navbar">
+            <a href="index.html" class="nav-link">
+                <span class="material-symbols-rounded">home</span>
+                <span>Home</span>
+            </a>
+            <a href="destinations.html" class="nav-link">
+                <span class="material-symbols-rounded">travel_explore</span>
+                <span>Destinations</span>
+            </a>
+            <a href="services.html" class="nav-link active">
+                <span class="material-symbols-rounded">concierge</span>
+                <span>Services</span>
+            </a>
+            <a href="offers.html" class="nav-link">
+                <span class="material-symbols-rounded">local_offer</span>
+                <span>Offers</span>
+            </a>
+            <a href="booking.html" class="nav-link">
+                <span class="material-symbols-rounded">calendar_month</span>
+                <span>Booking</span>
+            </a>
+            <a href="contact.html" class="nav-link">
+                <span class="material-symbols-rounded">contact_support</span>
+                <span>Contact</span>
+            </a>
+        </nav>
+        <div class="icons">
+            <button class="icon-btn" id="search-btn">
+                <span class="material-symbols-rounded">search</span>
+            </button>
+            <button class="icon-btn" id="login-btn">
+                <span class="material-symbols-rounded">person</span>
+            </button>
+            <button class="icon-btn" id="theme-toggle">
+                <span class="material-symbols-rounded">dark_mode</span>
+            </button>
+        </div>
+        <form action="" class="search-form">
+            <input type="search" id="search-bar" placeholder="Search here...">
+            <button type="submit" class="search-btn">
+                <span class="material-symbols-rounded">search</span>
+            </button>
+        </form>
+    </header>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <a href="index.html" class="sidebar-logo">
+                <span class="material-symbols-rounded">flight_takeoff</span>
+                <span>F</span>lying<span>W</span>orld
+            </a>
+            <button class="sidebar-close">
+                <span class="material-symbols-rounded">close</span>
+            </button>
+        </div>
+
+        <ul class="nav-links">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="destinations.html" class="nav-link">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Destinations</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="services.html" class="nav-link active">
+                    <i class="fas fa-concierge-bell"></i>
+                    <span>Services</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="offers.html" class="nav-link">
+                    <i class="fas fa-tag"></i>
+                    <span>Offers</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="hotels.html" class="nav-link">
+                    <i class="fas fa-hotel"></i>
+                    <span>Hotels</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="booking.html" class="nav-link">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span>Book Now</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="contact.html" class="nav-link">
+                    <i class="fas fa-envelope"></i>
+                    <span>Contact</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="login.html" class="nav-link">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <span>Login</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="register.html" class="nav-link">
+                    <i class="fas fa-user-plus"></i>
+                    <span>Register</span>
+                </a>
+            </li>
+        </ul>
+
+        <div class="sidebar-footer">
+            <div class="social-links">
+                <a href="#" class="social-link">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="social-link">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="social-link">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="social-link">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Services Section -->
+    <section class="services-page">
+        <div class="page-header" data-aos="fade-down">
+            <h1 class="heading">Our Services</h1>
+            <p>Discover our comprehensive range of travel services designed to make your journey unforgettable</p>
+        </div>
+
+        <div class="services-grid">
+            <!-- Hotels Service -->
+            <div class="service-card" data-aos="fade-up">
+                <div class="service-icon">
+                    <span class="material-symbols-rounded">hotel</span>
+                </div>
+                <h3>Luxury Hotels</h3>
+                <p>Experience comfort and luxury in our carefully selected hotels worldwide. We partner with the best establishments to ensure your stay is perfect.</p>
+                <ul class="service-features">
+                    <li><span class="material-symbols-rounded">check_circle</span> 5-star accommodations</li>
+                    <li><span class="material-symbols-rounded">check_circle</span> Premium amenities</li>
+                    <li><span class="material-symbols-rounded">check_circle</span> 24/7 concierge service</li>
+                </ul>
+                <a href="hotels.html" class="btn">View Hotels</a>
+            </div>
+
+            <!-- Flights Service -->
+            <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="service-icon">
+                    <span class="material-symbols-rounded">flight</span>
+                </div>
+                <h3>Flight Bookings</h3>
+                <p>Find the best deals on flights to any destination. We work with major airlines to offer competitive prices and flexible schedules.</p>
+                <ul class="service-features">
+                    <li><span class="material-symbols-rounded">check_circle</span> Global destinations</li>
+                    <li><span class="material-symbols-rounded">check_circle</span> Best price guarantee</li>
+                    <li><span class="material-symbols-rounded">check_circle</span> Free cancellation</li>
+                </ul>
+                <a href="flights.html" class="btn">Book Flights</a>
+            </div>
+
+            <!-- Tours Service -->
+            <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="service-icon">
+                    <span class="material-symbols-rounded">map</span>
+                </div>
+                <h3>Guided Tours</h3>
+                <p>Explore destinations with our expert guides. Discover local culture, history, and hidden gems with carefully crafted tour packages.</p>
+                <ul class="service-features">
+                    <li><span class="material-symbols-rounded">check_circle</span> Expert local guides</li>
+                    <li><span class="material-symbols-rounded">check_circle</span> Customizable itineraries</li>
+                    <li><span class="material-symbols-rounded">check_circle</span> Small group sizes</li>
+                </ul>
+                <a href="tours.html" class="btn">Explore Tours</a>
+            </div>
+
+            <!-- Transportation Service -->
+            <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="service-icon">
+                    <span class="material-symbols-rounded">directions_car</span>
+                </div>
+                <h3>Transportation</h3>
+                <p>Reliable transportation services for all your travel needs. From airport transfers to luxury car rentals, we've got you covered.</p>
+                <ul class="service-features">
+                    <li><span class="material-symbols-rounded">check_circle</span> Airport transfers</li>
+                    <li><span class="material-symbols-rounded">check_circle</span> Luxury vehicles</li>
+                    <li><span class="material-symbols-rounded">check_circle</span> Professional drivers</li>
+                </ul>
+                <a href="transport.html" class="btn">Book Transport</a>
+            </div>
+
+            <!-- Activities Service -->
+            <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="service-icon">
+                    <span class="material-symbols-rounded">attractions</span>
+                </div>
+                <h3>Activities & Experiences</h3>
+                <p>Make your trip memorable with our curated activities and experiences. From adventure sports to cultural events.</p>
+                <ul class="service-features">
+                    <li><span class="material-symbols-rounded">check_circle</span> Unique experiences</li>
+                    <li><span class="material-symbols-rounded">check_circle</span> Local activities</li>
+                    <li><span class="material-symbols-rounded">check_circle</span> Family-friendly options</li>
+                </ul>
+                <a href="activities.html" class="btn">Browse Activities</a>
+            </div>
+
+            <!-- Support Service -->
+            <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+                <div class="service-icon">
+                    <span class="material-symbols-rounded">support_agent</span>
+                </div>
+                <h3>24/7 Support</h3>
+                <p>Our dedicated support team is always ready to assist you. Get help with bookings, changes, or any travel-related queries.</p>
+                <ul class="service-features">
+                    <li><span class="material-symbols-rounded">check_circle</span> 24/7 availability</li>
+                    <li><span class="material-symbols-rounded">check_circle</span> Multi-language support</li>
+                    <li><span class="material-symbols-rounded">check_circle</span> Emergency assistance</li>
+                </ul>
+                <a href="contact.html" class="btn">Contact Support</a>
+            </div>
+        </div>
+
+        <!-- Why Choose Us Section -->
+        <div class="why-choose-us" data-aos="fade-up">
+            <h2>Why Choose Our Services?</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <span class="material-symbols-rounded">verified</span>
+                    <h3>Best Price Guarantee</h3>
+                    <p>We offer competitive prices and match any lower price you find.</p>
+                </div>
+                <div class="feature">
+                    <span class="material-symbols-rounded">security</span>
+                    <h3>Secure Booking</h3>
+                    <p>Your payments and personal information are always protected.</p>
+                </div>
+                <div class="feature">
+                    <span class="material-symbols-rounded">workspace_premium</span>
+                    <h3>Quality Service</h3>
+                    <p>We maintain high standards in all our services and partnerships.</p>
+                </div>
+                <div class="feature">
+                    <span class="material-symbols-rounded">support_agent</span>
+                    <h3>Dedicated Support</h3>
+                    <p>Our team is available 24/7 to assist you with any needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>FLYING WORLD is your trusted partner for unforgettable travel experiences. We provide comprehensive travel services with a focus on quality and customer satisfaction.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <ul class="contact-info">
+                    <li>
+                        <span class="material-symbols-rounded">location_on</span>
+                        123 Travel Street, City, Country
+                    </li>
+                    <li>
+                        <span class="material-symbols-rounded">phone</span>
+                        +1 234 567 890
+                    </li>
+                    <li>
+                        <span class="material-symbols-rounded">email</span>
+                        info@flyingworld.com
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 FLYING WORLD. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="assets/js/modules/sidebar.js"></script>
+    <script src="travel.js"></script>
+</body>
+</html>

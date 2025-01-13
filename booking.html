@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Now - FLYING WORLD</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/components/sidebar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-left">
+            <button class="sidebar-toggle" aria-label="Toggle menu">
+                <span class="material-symbols-rounded">menu</span>
+            </button>
+            <a href="index.html" class="logo">
+                <span class="material-symbols-rounded">flight_takeoff</span>
+                <span>F</span>lying<span>W</span>orld
+            </a>
+        </div>
+        <nav class="navbar">
+            <a href="index.html" class="nav-link">
+                <span class="material-symbols-rounded">home</span>
+                <span>Home</span>
+            </a>
+            <a href="destinations.html" class="nav-link">
+                <span class="material-symbols-rounded">travel_explore</span>
+                <span>Destinations</span>
+            </a>
+            <a href="services.html" class="nav-link">
+                <span class="material-symbols-rounded">concierge</span>
+                <span>Services</span>
+            </a>
+            <a href="offers.html" class="nav-link">
+                <span class="material-symbols-rounded">local_offer</span>
+                <span>Offers</span>
+            </a>
+            <a href="booking.html" class="nav-link active">
+                <span class="material-symbols-rounded">calendar_month</span>
+                <span>Book Now</span>
+            </a>
+            <a href="contact.html" class="nav-link">
+                <span class="material-symbols-rounded">contact_support</span>
+                <span>Contact</span>
+            </a>
+        </nav>
+        <div class="icons">
+            <i class="fas fa-search" id="search-btn"></i>
+            <i class="fas fa-user" id="login-btn"></i>
+        </div>
+    </header>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <a href="index.html" class="sidebar-logo">
+                <span class="material-symbols-rounded">flight_takeoff</span>
+                <span>F</span>lying<span>W</span>orld
+            </a>
+            <button class="sidebar-close">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+
+        <!-- User Section -->
+        <div class="sidebar-user">
+            <div class="user-actions">
+                <a href="login.html" class="nav-link">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <span>Login</span>
+                </a>
+                <a href="register.html" class="nav-link">
+                    <i class="fas fa-user-plus"></i>
+                    <span>Register</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Main Navigation -->
+        <ul class="nav-links">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </a>
+            </li>
+            
+            <!-- Travel Section -->
+            <li class="nav-section">
+                <span class="nav-section-title">Travel</span>
+            </li>
+            <li class="nav-item">
+                <a href="destinations.html" class="nav-link">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Destinations</span>
+                    <span class="badge">New</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="hotels.html" class="nav-link">
+                    <i class="fas fa-hotel"></i>
+                    <span>Hotels</span>
+                </a>
+            </li>
+            <li class="nav-item active">
+                <a href="booking.html" class="nav-link">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span>Book Now</span>
+                </a>
+            </li>
+
+            <!-- Services Section -->
+            <li class="nav-section">
+                <span class="nav-section-title">Services</span>
+            </li>
+            <li class="nav-item">
+                <a href="services.html" class="nav-link">
+                    <i class="fas fa-concierge-bell"></i>
+                    <span>Our Services</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="offers.html" class="nav-link">
+                    <i class="fas fa-tag"></i>
+                    <span>Special Offers</span>
+                    <span class="badge hot">Hot</span>
+                </a>
+            </li>
+
+            <!-- Support Section -->
+            <li class="nav-section">
+                <span class="nav-section-title">Support</span>
+            </li>
+            <li class="nav-item">
+                <a href="contact.html" class="nav-link">
+                    <i class="fas fa-envelope"></i>
+                    <span>Contact Us</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="about.html" class="nav-link">
+                    <i class="fas fa-info-circle"></i>
+                    <span>About Us</span>
+                </a>
+            </li>
+        </ul>
+
+        <!-- Footer -->
+        <div class="sidebar-footer">
+            <div class="social-links">
+                <a href="#" class="social-link">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="social-link">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="social-link">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Booking Section -->
+    <main class="booking-page">
+        <div class="booking-container" data-aos="fade-up">
+            <div class="booking-form-container">
+                <div class="language-tabs">
+                    <button class="lang-tab active" data-lang="en">English</button>
+                    <button class="lang-tab" data-lang="ar">عربي</button>
+                </div>
+
+                <!-- English Booking Form -->
+                <form class="booking-form" id="booking-form-en" data-lang="en">
+                    <h2>Book Your Trip</h2>
+                    <p>Fill in the details below to start your journey</p>
+
+                    <div class="form-section">
+                        <h3>Trip Details</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="destination-en">Destination</label>
+                                <div class="input-group">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <select id="destination-en" name="destination" required>
+                                        <option value="">Select Destination</option>
+                                        <option value="paris">Paris, France</option>
+                                        <option value="dubai">Dubai, UAE</option>
+                                        <option value="tokyo">Tokyo, Japan</option>
+                                        <option value="istanbul">Istanbul, Turkey</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="package-en">Package Type</label>
+                                <div class="input-group">
+                                    <i class="fas fa-suitcase"></i>
+                                    <select id="package-en" name="package" required>
+                                        <option value="">Select Package</option>
+                                        <option value="basic">Basic Package</option>
+                                        <option value="standard">Standard Package</option>
+                                        <option value="premium">Premium Package</option>
+                                        <option value="luxury">Luxury Package</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="departure-en">Departure Date</label>
+                                <div class="input-group">
+                                    <i class="fas fa-calendar"></i>
+                                    <input type="text" id="departure-en" name="departure" class="datepicker" required placeholder="Select Date">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="duration-en">Duration</label>
+                                <div class="input-group">
+                                    <i class="fas fa-clock"></i>
+                                    <select id="duration-en" name="duration" required>
+                                        <option value="">Select Duration</option>
+                                        <option value="3">3 Days</option>
+                                        <option value="5">5 Days</option>
+                                        <option value="7">7 Days</option>
+                                        <option value="10">10 Days</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h3>Traveler Information</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="adults-en">Adults</label>
+                                <div class="input-group">
+                                    <i class="fas fa-user"></i>
+                                    <select id="adults-en" name="adults" required>
+                                        <option value="1">1 Adult</option>
+                                        <option value="2">2 Adults</option>
+                                        <option value="3">3 Adults</option>
+                                        <option value="4">4 Adults</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="children-en">Children</label>
+                                <div class="input-group">
+                                    <i class="fas fa-child"></i>
+                                    <select id="children-en" name="children">
+                                        <option value="0">No Children</option>
+                                        <option value="1">1 Child</option>
+                                        <option value="2">2 Children</option>
+                                        <option value="3">3 Children</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h3>Additional Services</h3>
+                        <div class="services-grid">
+                            <label class="service-option">
+                                <input type="checkbox" name="services" value="airport_transfer">
+                                <span class="service-card">
+                                    <i class="fas fa-car"></i>
+                                    <span>Airport Transfer</span>
+                                </span>
+                            </label>
+                            <label class="service-option">
+                                <input type="checkbox" name="services" value="travel_insurance">
+                                <span class="service-card">
+                                    <i class="fas fa-shield-alt"></i>
+                                    <span>Travel Insurance</span>
+                                </span>
+                            </label>
+                            <label class="service-option">
+                                <input type="checkbox" name="services" value="guided_tours">
+                                <span class="service-card">
+                                    <i class="fas fa-map"></i>
+                                    <span>Guided Tours</span>
+                                </span>
+                            </label>
+                            <label class="service-option">
+                                <input type="checkbox" name="services" value="meals">
+                                <span class="service-card">
+                                    <i class="fas fa-utensils"></i>
+                                    <span>Meal Package</span>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-section total-section">
+                        <div class="total-row">
+                            <span>Base Price:</span>
+                            <span class="base-price">$0</span>
+                        </div>
+                        <div class="total-row">
+                            <span>Additional Services:</span>
+                            <span class="services-price">$0</span>
+                        </div>
+                        <div class="total-row total">
+                            <span>Total:</span>
+                            <span class="total-price">$0</span>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Proceed to Payment</button>
+                </form>
+
+                <!-- Arabic Booking Form -->
+                <form class="booking-form rtl" id="booking-form-ar" data-lang="ar" style="display: none;">
+                    <h2>احجز رحلتك</h2>
+                    <p>املأ التفاصيل أدناه لبدء رحلتك</p>
+
+                    <div class="form-section">
+                        <h3>تفاصيل الرحلة</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="destination-ar">الوجهة</label>
+                                <div class="input-group">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <select id="destination-ar" name="destination" required>
+                                        <option value="">اختر الوجهة</option>
+                                        <option value="paris">باريس، فرنسا</option>
+                                        <option value="dubai">دبي، الإمارات</option>
+                                        <option value="tokyo">طوكيو، اليابان</option>
+                                        <option value="istanbul">إسطنبول، تركيا</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="package-ar">نوع الباقة</label>
+                                <div class="input-group">
+                                    <i class="fas fa-suitcase"></i>
+                                    <select id="package-ar" name="package" required>
+                                        <option value="">اختر الباقة</option>
+                                        <option value="basic">الباقة الأساسية</option>
+                                        <option value="standard">الباقة القياسية</option>
+                                        <option value="premium">الباقة المميزة</option>
+                                        <option value="luxury">الباقة الفاخرة</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="departure-ar">تاريخ المغادرة</label>
+                                <div class="input-group">
+                                    <i class="fas fa-calendar"></i>
+                                    <input type="text" id="departure-ar" name="departure" class="datepicker" required placeholder="اختر التاريخ">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="duration-ar">المدة</label>
+                                <div class="input-group">
+                                    <i class="fas fa-clock"></i>
+                                    <select id="duration-ar" name="duration" required>
+                                        <option value="">اختر المدة</option>
+                                        <option value="3">3 أيام</option>
+                                        <option value="5">5 أيام</option>
+                                        <option value="7">7 أيام</option>
+                                        <option value="10">10 أيام</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h3>معلومات المسافرين</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="adults-ar">البالغين</label>
+                                <div class="input-group">
+                                    <i class="fas fa-user"></i>
+                                    <select id="adults-ar" name="adults" required>
+                                        <option value="1">بالغ واحد</option>
+                                        <option value="2">بالغان</option>
+                                        <option value="3">3 بالغين</option>
+                                        <option value="4">4 بالغين</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="children-ar">الأطفال</label>
+                                <div class="input-group">
+                                    <i class="fas fa-child"></i>
+                                    <select id="children-ar" name="children">
+                                        <option value="0">لا يوجد أطفال</option>
+                                        <option value="1">طفل واحد</option>
+                                        <option value="2">طفلان</option>
+                                        <option value="3">3 أطفال</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h3>خدمات إضافية</h3>
+                        <div class="services-grid">
+                            <label class="service-option">
+                                <input type="checkbox" name="services" value="airport_transfer">
+                                <span class="service-card">
+                                    <i class="fas fa-car"></i>
+                                    <span>توصيل المطار</span>
+                                </span>
+                            </label>
+                            <label class="service-option">
+                                <input type="checkbox" name="services" value="travel_insurance">
+                                <span class="service-card">
+                                    <i class="fas fa-shield-alt"></i>
+                                    <span>تأمين السفر</span>
+                                </span>
+                            </label>
+                            <label class="service-option">
+                                <input type="checkbox" name="services" value="guided_tours">
+                                <span class="service-card">
+                                    <i class="fas fa-map"></i>
+                                    <span>جولات مع مرشد</span>
+                                </span>
+                            </label>
+                            <label class="service-option">
+                                <input type="checkbox" name="services" value="meals">
+                                <span class="service-card">
+                                    <i class="fas fa-utensils"></i>
+                                    <span>باقة الوجبات</span>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-section total-section">
+                        <div class="total-row">
+                            <span>السعر الأساسي:</span>
+                            <span class="base-price">$0</span>
+                        </div>
+                        <div class="total-row">
+                            <span>الخدمات الإضافية:</span>
+                            <span class="services-price">$0</span>
+                        </div>
+                        <div class="total-row total">
+                            <span>المجموع:</span>
+                            <span class="total-price">$0</span>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">المتابعة للدفع</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="assets/js/modules/sidebar.js"></script>
+    <script src="assets/js/modules/booking.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            mirror: false
+        });
+
+        // Form validation
+        document.querySelectorAll('.booking-form').forEach(form => {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                let isValid = true;
+                const requiredFields = this.querySelectorAll('[required]');
+                
+                requiredFields.forEach(field => {
+                    if (!field.value.trim()) {
+                        isValid = false;
+                        field.classList.add('error');
+                    } else {
+                        field.classList.remove('error');
+                    }
+                });
+
+                if (isValid) {
+                    // Show success message
+                    alert('Booking submitted successfully!');
+                    this.reset();
+                } else {
+                    // Show error message
+                    alert('Please fill in all required fields.');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Offers - FLYING WORLD</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/components/sidebar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-left">
+            <button class="sidebar-toggle" aria-label="Toggle menu">
+                <span class="material-symbols-rounded">menu</span>
+            </button>
+            <a href="index.html" class="logo">
+                <span class="material-symbols-rounded">flight_takeoff</span>
+                <span>F</span>lying<span>W</span>orld
+            </a>
+        </div>
+        <nav class="navbar">
+            <a href="index.html" class="nav-link">
+                <span class="material-symbols-rounded">home</span>
+                <span>Home</span>
+            </a>
+            <a href="destinations.html" class="nav-link">
+                <span class="material-symbols-rounded">travel_explore</span>
+                <span>Destinations</span>
+            </a>
+            <a href="services.html" class="nav-link">
+                <span class="material-symbols-rounded">concierge</span>
+                <span>Services</span>
+            </a>
+            <a href="offers.html" class="nav-link active">
+                <span class="material-symbols-rounded">local_offer</span>
+                <span>Offers</span>
+            </a>
+            <a href="booking.html" class="nav-link">
+                <span class="material-symbols-rounded">calendar_month</span>
+                <span>Booking</span>
+            </a>
+            <a href="contact.html" class="nav-link">
+                <span class="material-symbols-rounded">contact_support</span>
+                <span>Contact</span>
+            </a>
+        </nav>
+        <div class="icons">
+            <i class="fas fa-search" id="search-btn"></i>
+            <i class="fas fa-user" id="login-btn"></i>
+        </div>
+    </header>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <a href="index.html" class="sidebar-logo">
+                <span>F</span>lying<span>W</span>orld
+            </a>
+            <i class="fas fa-times sidebar-close"></i>
+        </div>
+
+        <ul class="nav-links">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="destinations.html" class="nav-link">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Destinations</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="services.html" class="nav-link">
+                    <i class="fas fa-concierge-bell"></i>
+                    <span>Services</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="offers.html" class="nav-link active">
+                    <i class="fas fa-gift"></i>
+                    <span>Special Offers</span>
+                    <span class="badge">Hot</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="booking.html" class="nav-link">
+                    <i class="fas fa-calendar-check"></i>
+                    <span>Book Now</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="contact.html" class="nav-link">
+                    <i class="fas fa-envelope"></i>
+                    <span>Contact Us</span>
+                </a>
+            </li>
+        </ul>
+
+        <div class="sidebar-footer">
+            <div class="social-links">
+                <a href="#" class="social-link">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="social-link">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="social-link">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="social-link">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="offers-page">
+        <section class="offers-header" data-aos="fade-down">
+            <h1 class="heading">
+                <span>Special Offers</span>
+            </h1>
+            <p class="offers-description">Discover our exclusive deals and save big on your next adventure</p>
+        </section>
+
+        <section class="flash-deals">
+            <h2 class="sub-heading">Flash Deals <span class="countdown">Ends in: 48:00:00</span></h2>
+            <div class="deals-grid">
+                <div class="deal-card">
+                    <div class="deal-image">
+                        <img src="images/maldives.jpg" alt="Maldives">
+                        <div class="deal-badge">
+                            <span>-30%</span>
+                        </div>
+                    </div>
+                    <div class="deal-content">
+                        <h3>Maldives Paradise</h3>
+                        <div class="deal-meta">
+                            <span><i class="fas fa-calendar-alt"></i> 7 Days</span>
+                            <span><i class="fas fa-user"></i> 2 Adults</span>
+                        </div>
+                        <p>Luxury overwater villa experience with all-inclusive meals and activities</p>
+                        <div class="deal-price">
+                            <span class="original">$3,999</span>
+                            <span class="discounted">$2,799</span>
+                        </div>
+                        <a href="booking.html" class="btn">Book Now</a>
+                    </div>
+                </div>
+
+                <div class="deal-card">
+                    <div class="deal-image">
+                        <img src="images/santorini.jpg" alt="Santorini">
+                        <div class="deal-badge">
+                            <span>-25%</span>
+                        </div>
+                    </div>
+                    <div class="deal-content">
+                        <h3>Santorini Escape</h3>
+                        <div class="deal-meta">
+                            <span><i class="fas fa-calendar-alt"></i> 5 Days</span>
+                            <span><i class="fas fa-user"></i> 2 Adults</span>
+                        </div>
+                        <p>Romantic getaway with sunset views and wine tasting experiences</p>
+                        <div class="deal-price">
+                            <span class="original">$2,499</span>
+                            <span class="discounted">$1,874</span>
+                        </div>
+                        <a href="booking.html" class="btn">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="seasonal-offers" data-aos="fade-up">
+            <h2 class="sub-heading">Seasonal Specials</h2>
+            <div class="offers-grid">
+                <div class="offer-card">
+                    <div class="offer-image">
+                        <img src="images/dubai.jpg" alt="Dubai">
+                        <div class="offer-tag">Summer Special</div>
+                    </div>
+                    <div class="offer-content">
+                        <h3>Dubai Adventure</h3>
+                        <div class="offer-features">
+                            <span><i class="fas fa-hotel"></i> 5-Star Hotel</span>
+                            <span><i class="fas fa-car"></i> Airport Transfer</span>
+                            <span><i class="fas fa-ticket-alt"></i> Desert Safari</span>
+                        </div>
+                        <p>Experience luxury and adventure in the heart of Dubai</p>
+                        <div class="offer-price">
+                            <span class="price">From $1,999</span>
+                            <span class="savings">Save $500</span>
+                        </div>
+                        <a href="booking.html" class="btn">View Details</a>
+                    </div>
+                </div>
+
+                <div class="offer-card">
+                    <div class="offer-image">
+                        <img src="images/bali.jpg" alt="Bali">
+                        <div class="offer-tag">Family Package</div>
+                    </div>
+                    <div class="offer-content">
+                        <h3>Bali Family Retreat</h3>
+                        <div class="offer-features">
+                            <span><i class="fas fa-home"></i> Private Villa</span>
+                            <span><i class="fas fa-utensils"></i> All Meals</span>
+                            <span><i class="fas fa-child"></i> Kids Activities</span>
+                        </div>
+                        <p>Perfect family vacation with activities for everyone</p>
+                        <div class="offer-price">
+                            <span class="price">From $2,499</span>
+                            <span class="savings">Save $700</span>
+                        </div>
+                        <a href="booking.html" class="btn">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="early-bird">
+            <h2 class="sub-heading">Early Bird Deals</h2>
+            <div class="early-bird-grid">
+                <div class="early-bird-card">
+                    <div class="early-bird-content">
+                        <h3>Book Early & Save</h3>
+                        <p>Get up to 40% off on next season's travel packages when you book 6 months in advance</p>
+                        <ul class="early-bird-benefits">
+                            <li><i class="fas fa-check"></i> Flexible Dates</li>
+                            <li><i class="fas fa-check"></i> Free Cancellation</li>
+                            <li><i class="fas fa-check"></i> Best Price Guarantee</li>
+                        </ul>
+                        <a href="#" class="btn">Browse Packages</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>About Us</h3>
+                <p>Your trusted travel partner providing comprehensive travel services worldwide.</p>
+            </div>
+            <div class="box">
+                <h3>Branch Locations</h3>
+                <a href="#">USA</a>
+                <a href="#">Japan</a>
+                <a href="#">France</a>
+                <a href="#">Russia</a>
+            </div>
+            <div class="box">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="destinations.html">Destinations</a>
+                <a href="services.html">Services</a>
+                <a href="booking.html">Book Now</a>
+            </div>
+            <div class="box">
+                <h3>Follow Us</h3>
+                <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+                <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+                <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            mirror: false
+        });
+    </script>
+    <script src="assets/js/modules/sidebar.js"></script>
+    <script src="travel.js"></script>
+</body>
+</html>
