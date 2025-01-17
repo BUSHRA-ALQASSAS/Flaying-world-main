@@ -4,11 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - FLYING WORLD</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="assets/css/components/sidebar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lavishly+Yours&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cherish&family=Lavishly+Yours&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/components/sidebar.css">
 </head>
 <body>
     <!-- Header -->
@@ -49,9 +56,13 @@
             </a>
         </nav>
         <div class="icons">
-            <i class="fas fa-search" id="search-btn"></i>
-            <i class="fas fa-user" id="login-btn"></i>
+            <i class="fas fa-search" id="search-btn"  onclick="showbar()"></i>
+            <i class="fas fa-user" id="login-btn" onclick="showform()"></i>
         </div>
+        <form action="" class="search-form">
+            <input type="search" id="search-bar" placeholder="Search here...">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
     </header>
 
     <!-- Sidebar -->
@@ -164,7 +175,91 @@
             </div>
         </div>
     </aside>
+    <div class="login-form-container">
+        <i class="fas fa-times" id="form-close" onclick="hideform()"></i>
+        <form action="">
+            <h3>Login</h3>
+            <input type="email" class="box" placeholder="Email">
+            <input type="password" class="box" placeholder="Password">
+            <input type="submit" value="Login" class="btn">
+            <input type="checkbox" id="remember">
+            <label for="remember">Remember me</label>
+            <p>Forgot password? <a href="#" onclick="showResetForm()">Click here</a></p>
+            <p>Don't have an account? <a href="#" onclick="showRegisterForm()">Register now</a></p>
+        </form>
+    </div>
 
+    <!-- Register Form -->
+    <div class="register-form-container">
+        <i class="fas fa-times" id="register-form-close"></i>
+        <form action="">
+            <h3>Register</h3>
+            <input type="text" class="box" placeholder="Full Name">
+            <input type="email" class="box" placeholder="Email">
+            <input type="password" class="box" placeholder="Password">
+            <input type="password" class="box" placeholder="Confirm Password">
+            <input type="tel" class="box" placeholder="Phone Number">
+            <input type="submit" value="Register" class="btn">
+        </form>
+    </div>
+
+    <!-- Reset Password Form -->
+    <div class="reset-form-container">
+        <i class="fas fa-times" id="reset-form-close"></i>
+        <form action="">
+            <h3>Reset Password</h3>
+            <input type="email" class="box" placeholder="Email">
+            <input type="submit" value="Send Reset Link" class="btn">
+        </form>
+    </div>
+
+    <div class="login-form">
+        <i class="fas fa-times" id="form-close" onclick="hideform()"></i>
+        <form action="">
+            <h3>Login</h3>
+            <input type="email" class="box" placeholder="Enter your email">
+            <input type="password" class="box" placeholder="Enter your password">
+            <input type="submit" value="Login now" class="btn">
+            <input type="checkbox" id="remember">
+            <label for="remember">Remember me</label>
+            <p>Forgot password? <a href="">Click here</a></p>
+            <p>Don't have an account? <a href="">Sign up</a></p>
+        </form>
+    </div>
+    <div class="register-form-container">
+        <i class="fas fa-times" id="register-form-close"></i>
+        <form action="">
+            <h3>Register</h3>
+            <input type="text" class="box" placeholder="Full Name">
+            <input type="email" class="box" placeholder="Email">
+            <input type="password" class="box" placeholder="Password">
+            <input type="password" class="box" placeholder="Confirm Password">
+            <input type="tel" class="box" placeholder="Phone Number">
+            <input type="submit" value="Register" class="btn">
+        </form>
+    </div>
+     <!-- Reset Password Form -->
+     <div class="reset-form-container">
+        <i class="fas fa-times" id="reset-form-close"></i>
+        <form action="">
+            <h3>Reset Password</h3>
+            <input type="email" class="box" placeholder="Email">
+            <input type="submit" value="Send Reset Link" class="btn">
+        </form>
+    </div>
+    <div class="login-form">
+        <i class="fas fa-times" id="form-close" onclick="hideform()"></i>
+        <form action="">
+            <h3>Login</h3>
+            <input type="email" class="box" placeholder="Enter your email">
+            <input type="password" class="box" placeholder="Enter your password">
+            <input type="submit" value="Login now" class="btn">
+            <input type="checkbox" id="remember">
+            <label for="remember">Remember me</label>
+            <p>Forgot password? <a href="">Click here</a></p>
+            <p>Don't have an account? <a href="">Sign up</a></p>
+        </form>
+    </div>
     <!-- Contact Section -->
     <main class="contact-page" data-aos="fade-up">
         <div class="contact-container">
@@ -218,28 +313,33 @@
                     <form class="contact-form" id="contact-form-en">
                         <h2>Send us a Message</h2>
                         <div class="form-group">
-                            <i class="fas fa-user"></i>
-                            <label for="name-en">Full Name</label>
+                            <label for="name-en">
+                                <i class="fas fa-user"></i>
+                                Full Name</label>
                             <div class="input-group">
                                 <input type="text" id="name-en" name="name" required placeholder="Enter your full name">
                             </div>
                         </div>
                         <div class="form-group">
-                            <i class="fas fa-envelope"></i>
-                            <label for="email-en">Email Address</label>
+                            <label for="email-en">
+                                <i class="fas fa-envelope"></i>
+                                Email Address</label>
                             <div class="input-group">
                                 <input type="email" id="email-en" name="email" required placeholder="Enter your email">
                             </div>
                         </div>
                         <div class="form-group">
-                            <i class="fas fa-phone"></i>
-                            <label for="phone-en">Phone Number</label>
+                            <label for="phone-en">
+                                <i class="fas fa-phone"></i>
+                                Phone Number</label>
                             <div class="input-group">
                                 <input type="tel" id="phone-en" name="phone" placeholder="Enter your phone number">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="subject-en">Subject</label>
+                            <label for="subject-en">
+                                <i class="fas fa-tag"></i>
+                                Subject</label>
                             <div class="input-group">
                                 <i class="fas fa-tag"></i>
                                 <select id="subject-en" name="subject" required>
@@ -253,10 +353,13 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="message-en">Message</label>
+                            <label for="message-en">
+                                <i class="fas fa-comment"></i>
+                                Message</label>
                             <div class="input-group">
                                 <i class="fas fa-comment"></i>
-                                <textarea id="message-en" name="message" required placeholder="Type your message here..."></textarea>
+                                <textarea id="message-en" name="message" required placeholder="Type your message ............">
+                                </textarea>
                             </div>
                         </div>
                         <button type="submit" class="btn btn-primary">Send Message</button>
@@ -383,8 +486,8 @@
             </div>
             <div class="box">
                 <h3>Quick Links</h3>
-                <a href="#home">Home</a>
-                <a href="#book">Book</a>
+                <a href="index.html#home">Home</a>
+                <a href="index.html#book">Book</a>
                 <a href="#packages">Packages</a>
                 <a href="#services">Services</a>
                 <a href="#gallary">Gallary</a>
@@ -393,16 +496,16 @@
             </div>
             <div class="box">
                 <h3>Follow Us</h3>
-                <a href="#">Facebook</a>
-                <a href="#">Instagram</a>
-                <a href="#">Twitter</a>
-                <a href="#">LinkedIn</a>
+                <a href="#"> Facebook</a>
+                <a href="#"> Instagram</a>
+                <a href="#"> Twitter</a>
+                <a href="#"> LinkedIn</a>
             </div>
         </div>
         <h1 class="created">Created by <span>Bushra & Batool</span> all right reserved</h1>
     </section>
 
-
+    <script src="travel.js"></script>
     <script src="assets/js/modules/sidebar.js"></script>
     <script src="assets/js/modules/contact.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
@@ -420,7 +523,6 @@
                 e.preventDefault();
                 let isValid = true;
                 const requiredFields = this.querySelectorAll('[required]');
-                
                 requiredFields.forEach(field => {
                     if (!field.value.trim()) {
                         isValid = false;

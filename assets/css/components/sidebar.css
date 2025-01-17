@@ -55,7 +55,7 @@
     gap: 10px;
 }
 
-.user-actions .nav-link {
+aside .user-actions .nav-link {
     flex: 1;
     padding: 10px;
     text-align: center;
@@ -64,7 +64,7 @@
     transition: all 0.3s ease;
 }
 
-.user-actions .nav-link:hover {
+aside .user-actions .nav-link:hover {
     background: var(--primary-color);
     color: var(--white);
 }
@@ -92,7 +92,7 @@
     margin: 5px 0;
 }
 
-.nav-link {
+aside .nav-link {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -101,19 +101,20 @@
     text-decoration: none;
     border-radius: 8px;
     transition: all 0.3s ease;
-}
+} 
 
 .nav-link:hover,
 .nav-link.active {
     background: var(--primary-color-light);
+    border-radius: .5rem;
     color: var(--primary-color);
 }
 
-.nav-link i {
+aside .nav-link i {
     font-size: 1.2rem;
     min-width: 25px;
     text-align: center;
-}
+} 
 
 .badge {
     margin-left: auto;

@@ -193,7 +193,7 @@ const countries = [
         hotels: [
           {
             name: "EQ Kuala Lumpur",
-            img: "images/Malaysia/KualaLumpu/EQKualaLumpur.jpg",
+            img: "images/malaysia/KualaLumpu/EQKualaLumpur.jpg",
             description:
               "Conveniently located in the centre of Kuala Lumpur, EQ Kuala Lumpur offers air-conditioned rooms with free WiFi, free private parking and room service. Each accommodation at the 5-star hotel has city views, and guests can enjoy access to a shared lounge and to a bar. The property has a year-round outdoor pool, fitness centre, sauna and garden. All guest rooms at the hotel come with a seating area, a flat-screen TV with satellite channels, a safety deposit box and a private bathroom with a bidet, free toiletries and a hairdryer. At EQ Kuala Lumpur all rooms are fitted with bed linen and towels. ",
           },

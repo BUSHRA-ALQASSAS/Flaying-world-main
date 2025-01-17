@@ -8,9 +8,95 @@
     <link rel="stylesheet" href="assets/css/components/sidebar.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 <body>
-    <!-- Header -->
+    
+    <!-- Sidebar -->
+     <aside class="sidebar"> 
+        <div class="sidebar-header">
+            <a href="index.html" class="sidebar-logo">
+                <span class="material-symbols-rounded">flight_takeoff</span>
+                <span>Flying World </span>
+            </a>
+            <i class="fas fa-times sidebar-close"></i>
+        </div>
+
+        <ul class="nav-links">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="destinations.html" class="nav-link">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Destinations</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="services.html" class="nav-link">
+                    <i class="fas fa-concierge-bell"></i>
+                    <span>Services</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="offers.html" class="nav-link">
+                    <i class="fas fa-tag"></i>
+                    <span>Offers</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="hotels.html" class="nav-link">
+                    <i class="fas fa-hotel"></i>
+                    <span>Hotels</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="booking.html" class="nav-link">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span>Book Now</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="contact.html" class="nav-link">
+                    <i class="fas fa-envelope"></i>
+                    <span>Contact</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="login.html" class="nav-link">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <span>Login</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="register.html" class="nav-link">
+                    <i class="fas fa-user-plus"></i>
+                    <span>Register</span>
+                </a>
+            </li>
+        </ul>
+
+        <div class="sidebar-footer">
+            <div class="social-links">
+                <a href="#" class="social-link">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="social-link">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="social-link">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="social-link">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+        </div>
+    </aside> 
+
     <header>
         <div class="header-left">
             <button class="sidebar-toggle" aria-label="Toggle menu">
@@ -22,66 +108,45 @@
             </a>
         </div>
         <nav class="navbar">
-            <ul class="nav-links">
-                <li class="nav-item">
                     <a href="index.html" class="nav-link">
                         <i class="fas fa-home"></i>
                         <span>Home</span>
                     </a>
-                </li>
-                <li class="nav-item">
                     <a href="destinations.html" class="nav-link">
                         <i class="fas fa-map-marker-alt"></i>
                         <span>Destinations</span>
                     </a>
-                </li>
-                <li class="nav-item">
                     <a href="services.html" class="nav-link">
                         <i class="fas fa-concierge-bell"></i>
                         <span>Services</span>
                     </a>
-                </li>
-                <li class="nav-item">
                     <a href="offers.html" class="nav-link">
                         <i class="fas fa-tag"></i>
                         <span>Offers</span>
                     </a>
-                </li>
-                <li class="nav-item">
-                    <a href="hotels.html" class="nav-link">
+                    <a href="hotels.html" class="nav-link active">
                         <i class="fas fa-hotel"></i>
                         <span>Hotels</span>
                     </a>
-                </li>
-                <li class="nav-item">
                     <a href="booking.html" class="nav-link">
                         <i class="fas fa-calendar-alt"></i>
                         <span>Book Now</span>
                     </a>
-                </li>
-                <li class="nav-item">
                     <a href="contact.html" class="nav-link">
                         <i class="fas fa-envelope"></i>
                         <span>Contact</span>
                     </a>
-                </li>
-                <li class="nav-item">
-                    <a href="login.html" class="nav-link">
-                        <i class="fas fa-sign-in-alt"></i>
-                        <span>Login</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="register.html" class="nav-link">
-                        <i class="fas fa-user-plus"></i>
-                        <span>Register</span>
-                    </a>
-                </li>
-            </ul>
         </nav>
         <div class="icons">
-            <i class="fas fa-search" id="search-btn"></i>
-            <i class="fas fa-user" id="login-btn"></i>
+            <button class="icon-btn" id="search-btn"  onclick="showbar()">
+                <span class="material-symbols-rounded">search</span>
+            </button>
+            <button class="icon-btn" id="login-btn"onclick="showform()">
+                <span class="material-symbols-rounded">person</span>
+            </button>
+            <button class="icon-btn" id="theme-toggle">
+                <span class="material-symbols-rounded">dark_mode</span>
+            </button>
         </div>
     </header>
 
@@ -96,7 +161,7 @@
                 <!-- Hotel Card 1 -->
                 <div class="hotel-card" data-aos="fade-up">
                     <div class="hotel-image">
-                        <img src="images/hotel-1.jpg" alt="Luxury Hotel 1">
+                        <img src="images/egypt/Alexandria/hilton-alexandria-king.jpg" alt="Luxury Hotel 1">
                         <div class="hotel-rating">
                             <span class="material-symbols-rounded">star</span>
                             <span>4.8</span>
@@ -129,7 +194,7 @@
                 <!-- Hotel Card 2 -->
                 <div class="hotel-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="hotel-image">
-                        <img src="images/hotel-2.jpg" alt="Luxury Hotel 2">
+                        <img src="images/maldif/meeru.jpg" alt="Luxury Hotel 2">
                         <div class="hotel-rating">
                             <span class="material-symbols-rounded">star</span>
                             <span>4.9</span>
@@ -162,7 +227,7 @@
                 <!-- Hotel Card 3 -->
                 <div class="hotel-card" data-aos="fade-up" data-aos-delay="200">
                     <div class="hotel-image">
-                        <img src="images/hotel-3.jpg" alt="Luxury Hotel 3">
+                        <img src="images/g-9.jpg" alt="Luxury Hotel 3">
                         <div class="hotel-rating">
                             <span class="material-symbols-rounded">star</span>
                             <span>4.7</span>
@@ -192,42 +257,94 @@
                     </div>
                 </div>
             </div>
-
-            <!-- Hotel Search Section -->
-            <div class="hotel-search" data-aos="fade-up">
-                <h2>Find Your Perfect Stay</h2>
-                <form class="search-form">
-                    <div class="form-group">
-                        <span class="material-symbols-rounded">location_on</span>
-                        <input type="text" placeholder="Where are you going?">
-                    </div>
-                    <div class="form-group">
-                        <span class="material-symbols-rounded">calendar_month</span>
-                        <input type="date" placeholder="Check-in">
-                    </div>
-                    <div class="form-group">
-                        <span class="material-symbols-rounded">calendar_month</span>
-                        <input type="date" placeholder="Check-out">
-                    </div>
-                    <div class="form-group">
-                        <span class="material-symbols-rounded">person</span>
-                        <select>
+        </div>
+        </main>
+<section>
+    <div class="hotel-search contact" >
+        <h2>Find Your Perfect Stay</h2>
+        <div class="row">
+            <div class="image">
+                <img src="images/contact-img.svg" alt="" >
+            </div>
+            <form class="search-forme">
+                <div class="form-group">
+                    <label for ="i1" >
+                        <i class="fas fa-map-marker-alt"></i>
+                        Where are you going?
+                    </label>
+                    <input type="text" id="i1" placeholder="Where are you going?">
+                </div>
+                <div class="form-group">
+                    <label for ="i2" >
+                        <i class="fas fa-calendar-alt"></i>
+                        Check-in
+                    </label>
+                    <input type="date" id="i2" placeholder="Check-in">
+                </div>
+                <div class="form-group">
+                    <label for ="i3" >
+                        <i class="fas fa-calendar-alt"></i>
+                        Check-out
+                    </label>
+                <input type="date" id="i3" placeholder="Check-out">
+                </div>
+                <div class="form-group">
+                    <label for="b1">
+                        <i class="fas fa-user"></i>
+                        <select id="b1">
                             <option value="">Guests</option>
                             <option value="1">1 Guest</option>
                             <option value="2">2 Guests</option>
                             <option value="3">3 Guests</option>
                             <option value="4">4+ Guests</option>
                         </select>
-                    </div>
-                    <button type="submit" class="btn-search">
-                        <span class="material-symbols-rounded">search</span>
-                        Search
-                    </button>
-                </form>
-            </div>
+                    </label>
+                </div>
+                <button type="submit" class="btn-search">
+                    <span class="material-symbols-rounded">search</span>
+                    Search
+                </button>
+            </form>
         </div>
-    </main>
+    </div>
 
+</section>
+            <!-- Hotel Search Section -->
+            <section class="footer">
+                <div class="box-container">
+                    <div class="box">
+                        <h3><span>F</span>LYING <span>W</span>ORLD</h3>
+                        <p>The website incorporates essential <br>and advanced features to provide a seamless travel booking experience.</p>
+                    </div>
+                    <div class="box">
+                        <h3>Branch</h3>
+                        <a href="" onclick="openCountry('egypt')">Egypt</a>
+                        <a href="#" onclick="openCountry('malaysia')">Malaysia</a>
+                        <a href="#" onclick="openCountry('india')">India</a>
+                        <a href="#" onclick="openCountry('maldif')">Maldif</a>
+                    </div>
+                    <div class="box">
+                        <h3>Quick Links</h3>
+                        <a href="#home">Home</a>
+                        <a href="#book">Book</a>
+                        <a href="#packages">Packages</a>
+                        <a href="#services">Services</a>
+                        <a href="#gallary">Gallary</a>
+                        <a href="#review">Review</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                    <div class="box">
+                        <h3>Follow Us</h3>
+                        <a href="#">Facebook</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">Twitter</a>
+                        <a href="#">LinkedIn</a>
+                    </div>
+                </div>
+                <h1 class="created">Created by <span>Bushra & Batool</span> all right reserved</h1>
+            </section>
+        
+        
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script>
         AOS.init({
@@ -238,7 +355,7 @@
         });
 
         // Form handling
-        document.querySelector('.search-form').addEventListener('submit', function(e) {
+        document.querySelector('.search-forme').addEventListener('submit', function(e) {
             e.preventDefault();
             // Add your search logic here
             alert('Search functionality will be implemented soon!');
